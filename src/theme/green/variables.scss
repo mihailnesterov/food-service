@@ -1,0 +1,37 @@
+// Переменные темы
+
+// Базовые размеры для текста, в пропорции к базовому размеру uikit (16px)
+$xsmall: ($base-body-font-size * 0.6);
+$small: ($base-body-font-size * 0.8);
+$normal: $base-body-font-size;
+$medium: ($base-body-font-size * 1.2);
+$large: ($base-body-font-size * 1.5);
+$xlarge: ($base-body-font-size * 1.8);
+
+// Цвета
+$black: #262626;
+$white: #FFFFFF;
+$green: #5CC97B; // кнопки
+$green-light: #85FAA6;
+$blue: #6097C9;
+$orange: #FCC92C;
+$yellow: #EFCD1A;
+$red: #F76161;
+$gray-light: #F8F8FA; // footer
+
+
+// debug
+$border-red:    1px red solid;
+$border-blue:   1px blue solid;
+$border-green:  1px green solid;
+
+// Высота шапки
+$header-height: 87px;
+
+// Тени
+$shadow:        0px 4px 14px rgba(50, 6, 77, 0.1);
+$shadow-sm:        0px 3px 8px rgba(50, 6, 77, 0.1);
+
+// Переопределяем стили ::selection
+/*$base-selection-background: unset !important;
+$base-selection-color: unset !important;*/

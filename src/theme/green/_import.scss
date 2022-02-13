@@ -1,0 +1,17 @@
+// Точка сборки темы.
+
+// Импорт шрифтов
+@import './fonts/stylesheet';
+
+// Импорт переменных и миксинов UIkit.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// Импорт переменных и миксинов темы. Должны быть здесь, между модулями uikit именно в таком порядке
+@import 'variables';
+@import 'mixins';
+@import 'extensions'; 
+
+// Импорт темы UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
+//@import "uikit/src/scss/uikit-theme.scss";

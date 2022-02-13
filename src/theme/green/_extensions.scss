@@ -1,0 +1,98 @@
+// Расширения темы.
+
+%contacts-group {
+    .city-button {
+        & span {
+            margin-right: 0.75rem;
+        }
+        @media screen and (max-width: 1099px) {
+            margin-bottom: 0.25rem;
+        }
+    }
+    .city-button,
+    .phone-link {
+        color: $black;
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: 400;
+        &:hover {
+            opacity: 0.8;
+        }
+        & svg {
+            width: 18px;
+        }
+        & span {
+            margin-left: 0.3rem;
+        }
+    }
+}
+
+%product-add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    box-shadow: 0px -1px 0px 0px rgba(229, 231, 239, 1) inset;
+    &:last-child {
+        box-shadow: unset;
+    }
+    & > * {
+        
+        padding: 0.5rem;
+        & h4 {
+            margin: 0;
+        }
+        & p {
+            margin: 0;
+            line-height: 1.2;
+        }
+        &:nth-child(1) {
+            flex: 1;
+            @media screen and (max-width: 1438px) {
+                flex: 2;
+            }
+        }
+        &:nth-child(2) {
+            flex: 6;
+            @media screen and (max-width: 1590px) {
+                flex: 5;
+            }
+            @media screen and (max-width: 1438px) {
+                flex: 6;
+            }
+            @media screen and (max-width: 959px) {
+                flex: 3;
+            }
+        }
+        &:nth-child(3) {
+            flex: 2;
+            & h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 0.1rem;
+                @media screen and (max-width: 1438px) {
+                    margin-top: 0.5rem;
+                }
+            }
+            & span {
+                /*@media screen and (max-width: 1590px) {
+                    display: none;
+                }*/
+                margin-right: 0.3rem;
+                @media screen and (max-width: 1438px) {
+                    display: none;
+                }
+                @media screen and (max-width: 959px) {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 1438px) {
+                flex: 3;
+            }
+            @media screen and (max-width: 959px) {
+                flex: 3;
+            }
+        }
+    }
+}
