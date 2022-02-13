@@ -8,12 +8,6 @@ import ShopBestPrices from '../components/cart/ShopBestPrices';
 import CartPriceInShop from '../components/cart/CartPriceInShop';
 import CartMenu from '../components/cart/CartMenu';
 import ShopCartTable from '../components/cart/ShopCartTable';
-/*import UIkit from 'uikit';
-import Icons from 'uikit/dist/js/uikit-icons';
-
-var notifications = UIkit.notification('MyMessage', 'danger')*/
-
-const productIds = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 
 /**
  * Корзина товаров
@@ -21,7 +15,6 @@ const productIds = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
  */
 const Cart: FC = () => {
     document.title = "Корзина товаров";
-    //console.log(notifications);
     // store
     const {cart, error, loading} = useTypedSelector(state => state.cart);
     // action-creators
@@ -38,7 +31,7 @@ const Cart: FC = () => {
 	return(
         
         <div className="uk-container-expand uk-padding-remove-top catalog-container">
-            <div className="---uk-container uk-padding-remove">
+            <div className="uk-padding-remove">
                 <div className="uk-flex uk-flex-left cart">
                     
                     <aside className="uk-visible@m uk-width-1-4@m uk-width-1-5@l">

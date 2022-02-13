@@ -1,50 +1,12 @@
-// Подключаем тему (green).
 @import "./theme/green/import";
-
-
-// Свой css
-div,
-header,
-main,
-ul,
-li,
-section,
-footer {
-    /*border: $border-red;
-    & > * {
-        border: $border-green;
-        & > * {
-            border: $border-blue;
-            & > * {
-                border: $border-red;
-            }
-        }
-    }*/
-}
 
 .head-wrapper {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
     margin-bottom: 2rem;
 }
 
-/*.uk-accordion-title:after{
-    background-image: url('../../bower_components/uikit/src/images/icons/chevron-down.svg');
-}
-.uk-open{
-    .uk-accordion-title:after{
-        background-image: url('../../bower_components/uikit/src/images/icons/chevron-up.svg');
-    }
-}*/
-
 .uk-accordion-title::before {
-    /*content: "";
-    width: 1.4em;
-    height: 1.4em;
-    margin-left: 10px;
-    float: right;*/
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='16 7 10 13 4 7'%3E%3C/polyline%3E%3C/svg%3E");
-    /*background-repeat: no-repeat;
-    background-position: 50% 50%;*/
 }
 .uk-open > .uk-accordion-title::before {
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='4 13 10 7 16 13'%3E%3C/polyline%3E%3C/svg%3E");

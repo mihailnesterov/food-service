@@ -19,8 +19,6 @@ const Login: FC = () => {
           },
         body: JSON.stringify({'login-form': {login, password}})
     });
-
-    console.log(user);
     
 
     const auth = (e: any) => {

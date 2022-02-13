@@ -1,7 +1,5 @@
 import React, {FC, useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import { useTypedSelector } from '../hooks/useTypedSelector';
-import {useActions} from '../hooks/useActions';
 import PersonalHeader from '../components/personal/PersonalHeader';
 import PersonalMenu from '../components/personal/PersonalMenu';
 import PersonalForm from '../components/personal/PersonalForm';
@@ -24,8 +22,6 @@ const Personal: FC = () => {
 
     // store
     const {users} = useTypedSelector(state => state.user);
-    // action-creators
-    //const {fetchUser} = useActions();
 
     const[user, setUser] = useState<any | null>(null);
     useEffect(() => {
@@ -33,8 +29,6 @@ const Personal: FC = () => {
     }, [users]);
     
     const[menuItemActive, setMenuItemActive] = useState<number>(1);
-
-    console.log(users, user, menuItemActive);
 	
     return(
         <div className="uk-container-expand uk-padding-remove-top personal-container">

@@ -23,8 +23,6 @@ interface ISearchDropDownProps {
 const SearchDropDown: FC<ISearchDropDownProps> = (props: ISearchDropDownProps) => {
 
     const {searchValue, clearSearchValue} = props;
-    //const [products, setProducts] = useState<any | null>(null);
-    console.log(searchValue);
 
     const handleAddToCart = (product: any) => {
         const productName = product.name;

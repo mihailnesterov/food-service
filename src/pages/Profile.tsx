@@ -1,6 +1,4 @@
 import React, {FC, useState} from 'react';
-import { Link } from 'react-router-dom';
-import Button from '../components/common/Button';
 import ProfileHeader from '../components/profile/ProfileHeader';
 import ProfileMenu from '../components/profile/ProfileMenu';
 import ProfileInfo from '../components/profile/ProfileInfo';
